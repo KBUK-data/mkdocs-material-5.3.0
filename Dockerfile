@@ -10,14 +10,14 @@
 
 FROM ubuntu:focal-20220105
 
-LABEL "org.opencontainers.image.created=2022-01-28T22:51:22Z"
-LABEL "org.opencontainers.image.authors=kbrs-miaha"
-LABEL "org.opencontainers.image.source=https://github.com/KBUK-data/mkdocs-material-5.3.0"
-LABEL "org.opencontainers.image.version=1"
-LABEL "org.opencontainers.image.licenses=MIT License"
-LABEL "KBUK-data.ubuntu:focal-20220105"
-LABEL "KBUK-data.mkdocs-material=5.3.0"
-LABEL "KBUK-data.mkdocs=1.2.1"
+LABEL org.opencontainers.image.created=2022-01-28T22:51:22Z
+LABEL org.opencontainers.image.authors=kbrs-miaha
+LABEL org.opencontainers.image.source=https://github.com/KBUK-data/mkdocs-material-5.3.0
+LABEL org.opencontainers.image.version=1
+LABEL org.opencontainers.image.licenses="MIT License"
+LABEL KBUK-data.ubuntu=focal-20220105
+LABEL KBUK-data.mkdocs-material=5.3.0
+LABEL KBUK-data.mkdocs=1.2.1
 
 RUN apt-get update && \
     apt-get install python3 -y && \
