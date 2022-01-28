@@ -21,7 +21,8 @@ LABEL KBUK-data.mkdocs=1.2.1
 
 RUN apt-get update && \
     apt-get install python3 -y && \
-    apt-get install python3-pip -y
+    apt-get install python3-pip -y && \
+    apt-get install git -y
 
 WORKDIR /opt/app
 
