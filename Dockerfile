@@ -12,16 +12,12 @@ FROM ubuntu:focal-20220105
 
 LABEL "org.opencontainers.image.created=2022-01-28T22:51:22Z"
 LABEL "org.opencontainers.image.authors=kbrs-miaha"
-LABEL "org.opencontainers.image.source= URL to get source code for building the image (string)
-
-org.opencontainers.image.version version of the packaged software
-
-    The version MAY match a label or tag in the source code repository
-    version MAY be Semantic versioning-compatible
-
-org.opencontainers.image.revision Source control revision identifier for the packaged software.
-org.opencontainers.image.vendor Name of the distributing entity, organization or individual.
-org.opencontainers.image.licenses License(s) under which contained software is distributed as an SPDX License Expression.
+LABEL "org.opencontainers.image.source=https://github.com/KBUK-data/mkdocs-material-5.3.0"
+LABEL "org.opencontainers.image.version=1"
+LABEL "org.opencontainers.image.licenses=MIT License"
+LABEL "KBUK-data.ubuntu:focal-20220105"
+LABEL "KBUK-data.mkdocs-material=5.3.0"
+LABEL "KBUK-data.mkdocs=1.2.1"
 
 RUN apt-get update && \
     apt-get install python3 -y && \
