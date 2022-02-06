@@ -16,7 +16,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: name/app
+          images: kbrs0x2dmiaha/mkdocs-material-5.3.0
           tags: |
             type=ref,event=branch
             type=ref,event=pr
